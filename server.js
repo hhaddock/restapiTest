@@ -6,11 +6,11 @@ var bodyParser = require('body-parser');
 //Setting up DB connection
 var db;
 mongoose.connect('mongodb://root:1234@ds151820.mlab.com:51820/videodata', function(err, db){
-  console.log("API is running on port 3000");
+  console.log("API is running on port 8000");
   if(!err)
     console.log("DB connection successful");
   db = mongoose.connection;
-  app.listen(3000);
+  app.listen(000);
 });
 
 //Express
