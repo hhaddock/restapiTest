@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 app.use(function (req, res, next) {
 
     // Website you wish to allow to connect
-    res.setHeader('Access-Control-Allow-Origin', 'http://http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com');
+    res.setHeader('Access-Control-Allow-Origin', 'http://ec2-35-164-57-153.us-west-2.compute.amazonaws.com');
 
     // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
