@@ -10,7 +10,7 @@ mongoose.connect('mongodb://root:1234@ds151820.mlab.com:51820/videodata', functi
   if(!err)
     console.log("DB connection successful");
   db = mongoose.connection;
-  app.listen(000);
+  app.listen(8000);
 });
 
 //Express
