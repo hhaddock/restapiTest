@@ -27,7 +27,8 @@ router.get('/videos/:video_id', function(req, res){
 router.post('/videos', function(req, res){
   Video.create({
     title : req.body.title,
-    videoID : req.body.videoID
+    videoID : req.body.videoID,
+    genre : req.body.genre
   },
   function(err, videos){
     if(err)
