@@ -5,7 +5,8 @@ var router = express.Router();
 //Model
 var Video = require('../models/model');
 
-//Routing Logic
+/* Routing Logic */
+//Get all videos
 router.get('/videos', function(req, res){
   Video.find(function(err, videos){
     if(err)
@@ -14,6 +15,7 @@ router.get('/videos', function(req, res){
   });
 });
 
+//Get a specific video
 router.get('/videos/:video_id', function(req, res){
   Video.findOne({
     _id: req.params.video_id
@@ -24,6 +26,7 @@ router.get('/videos/:video_id', function(req, res){
   });
 })
 
+//Add a new Video
 router.post('/videos', function(req, res){
   Video.create({
     title : req.body.title,
@@ -42,6 +45,7 @@ router.post('/videos', function(req, res){
   });
 });
 
+//Delete a video
 router.delete('/videos/:video_id', function(req, res){
   Video.remove({
     _id : req.params.video_id
