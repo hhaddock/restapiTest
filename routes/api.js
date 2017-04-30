@@ -3,7 +3,7 @@ var express = require('express');
 var router = express.Router();
 
 //Model
-var Video = require('../models/video.js');
+var Video = require('../models/model');
 var Genre = require('../models/genre.js')
 
 /* Routing Logic */
