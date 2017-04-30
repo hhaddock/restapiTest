@@ -102,7 +102,7 @@ router.post('/genres', function(req, res){
 
 router.delete('/genres/:genre_id', function(req, res){
   Genre.remove({
-    _id : req.params.genre_id;
+    _id : req.params.genre_id
   },
   function(err, videos){
     if(err)
