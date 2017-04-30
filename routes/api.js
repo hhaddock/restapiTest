@@ -100,5 +100,21 @@ router.post('/genres', function(req, res){
   });
 });
 
+router.delete('/genres/:genre_id', function(req, res){
+  Genre.remove({
+    _id : req.params.video_id
+  },
+  function(err, videos){
+    if(err)
+      res.send(err);
+
+    Genre.find(function(err, genres){
+      if(err)
+        res.send(err)
+      res.json(genres);
+    });
+  });
+});
+
 //Return router
 module.exports = router;
