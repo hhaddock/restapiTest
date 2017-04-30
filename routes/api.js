@@ -3,8 +3,8 @@ var express = require('express');
 var router = express.Router();
 
 //Model
-var Video = require('../models/video.js');
-var Genre = require('../models/genre.js');
+var Video = require('../models/video');
+var Genre = require('../models/genre');
 
 /* Routing Logic */
 //Get all videos
